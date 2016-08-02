@@ -14,11 +14,11 @@
 
 		return Authentication;
 
-		function register(email, password, username) {
-			return $http.post('/api/v1/accounts', {
+		function register(email, username, password) {
+			return $http.post('/api/v1/accounts/', {
+				email: email,
 				username: username,
 				password: password,
-				email:email
 			});
 		}
 	}
