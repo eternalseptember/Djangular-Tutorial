@@ -7,4 +7,4 @@ Tutorial: https://thinkster.io/django-angularjs-tutorial#learning-django-and-ang
 4. In register.controller.js and authentication.service.js, changed the order to "email", "username", and "password"
 5. In urls.py, added "include" to the list of things to import
 6. In views.py, added more imports from the rest_framework
-7. If trying to fix a 405 error, try doing steps 4-6 and then restart the server.
+7. If trying to fix a 405 error at the end of the "Registering new users" section, try doing steps 4-6 and then restart the server.
