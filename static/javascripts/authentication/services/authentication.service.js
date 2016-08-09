@@ -24,7 +24,15 @@
 				email: email,
 				username: username,
 				password: password,
-			});
+			}).then(registerSuccessFn, registerErrorFn);
+
+			function registerSuccessFn(data, status, headers, config) {
+				Authentication.login(email, password);
+			}
+
+			function registerErrorFn(data, status, headers, config) {
+				console.Error('Epic failure!');
+			}
 		}
 	}
 
