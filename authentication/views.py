@@ -39,9 +39,12 @@ class AccountViewSet(viewsets.ModelViewSet):
 
 class LoginView(views.APIView):
 	def post(self, request, format = None):
-		data = json.loads(request.body)
-		email = data.get('email', None)
-		password = data.get('password', None)
+		#data = json.loads(request.body)
+		#email = data.get('email', None)
+		#password = data.get('password', None)
+
+		email = request.data.get('email', None)
+		password = request.data.get('password', None)
 
 		account = authenticate(email = email, password = password)
 
