@@ -67,6 +67,8 @@
 
 	function setAuthenticatedAccount(account) {
 		$cookies.authenticatedAccount = JSON.stringify(account);
+		//var json_account = JSON.parse(account);
+		//document.cookie = "authenticatedAccount="+JSON.stringify(json_account)+"";
 	}
 
 	function unauthenticate() {
