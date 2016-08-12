@@ -3,6 +3,7 @@ from django.db import models
 # Create your models here.
 from authentication.models import Account
 
+
 class Post(models.Model):
 	author = models.ForeignKey(Account)
 	content = models.TextField()
