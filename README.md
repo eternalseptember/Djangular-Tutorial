@@ -9,3 +9,4 @@ Tutorial: https://thinkster.io/django-angularjs-tutorial#learning-django-and-ang
 6. In views.py, added more imports from the rest_framework
 7. If trying to fix a 405 error at the end of the "Registering new users" section, try doing steps 4-6 and then restart the server.
 8. If having problems trying to log users in, modify how the request is being parsed in views.py. Take out the "data.json.loads(request.body) line" and change the next two lines to "request.data.get".
+9. In "Making a Post model" --> "Making the IsAuthorOfPost permission", the checkmark says "make a new permission called 'IsAuthenticatedAndOwnsObject' in 'posts/permissions.py'." That doesn't quite match the name of the function in the instructions, 'IsAuthorOfPost'.
