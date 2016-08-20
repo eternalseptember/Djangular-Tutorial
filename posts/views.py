@@ -1,7 +1,7 @@
 from rest_framework import permissions, viewsets
 from rest_framework.response import Response
 
-from posts.model import Post
+from posts.models import Post
 from posts.permissions import IsAuthorOfPost
 from posts.serializers import PostSerializer
 
