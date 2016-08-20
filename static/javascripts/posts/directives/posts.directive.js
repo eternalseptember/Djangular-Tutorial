@@ -2,7 +2,7 @@
 	'use strict';
 
 	angular
-		.module('thinkster.posts.directive')
+		.module('thinkster.posts.directives')
 		.directive('posts', posts);
 
 	function posts() {
