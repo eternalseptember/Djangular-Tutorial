@@ -10,7 +10,7 @@
 	function LoginController($location, $scope, Authentication) {
 		var vm = this;
 		vm.login = login;
-		/*
+		
 		activate();
 
 		function activate() {
@@ -19,7 +19,7 @@
 				$location.url('/');
 			}
 		}
-		*/
+		
 		function login() {
 			Authentication.login(vm.email, vm.password);
 		}

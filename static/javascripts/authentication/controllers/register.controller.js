@@ -10,7 +10,7 @@
 	function RegisterController($location, $scope, Authentication) {
 		var vm = this;
 		vm.register = register;
-		/*
+		
 		activate();
 
 		function activate() {
@@ -19,7 +19,7 @@
 				$location.url('/');
 			}
 		}
-		*/
+		
 		function register() {
 			Authentication.register(vm.email, vm.username, vm.password);
 		}
