@@ -8,7 +8,7 @@
 		]);
 
 	angular
-		.module('thinkster.porfiles.controllers', []);
+		.module('thinkster.profiles.controllers', []);
 
 	angular
 		.module('thinkster.profiles.services', []);
