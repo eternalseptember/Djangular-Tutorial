@@ -11,3 +11,8 @@ Tutorial: https://thinkster.io/django-angularjs-tutorial#learning-django-and-ang
 8. If having problems trying to log users in, modify how the request is being parsed in views.py. Take out the "data.json.loads(request.body) line" and change the next two lines to "request.data.get".
 9. In "Making a Post model" --> "Making the IsAuthorOfPost permission", the checkmark says "make a new permission called 'IsAuthenticatedAndOwnsObject' in 'posts/permissions.py'." That doesn't quite match the name of the function in the instructions, 'IsAuthorOfPost'.
 10. In "posts/serializers.py", the line should be "from authentication.serializers import AccountSerializer".
+
+## Etc.
+1. Haven't been able to get Snackbar working. Just used the console to view any error messages.
+2. I can't change username or delete profiles. https://github.com/brwr/thinkster-django-angular-tutorial/issues/20
+3. Adding new post through the interface doesn't work. Will probably fix later.

@@ -9,7 +9,8 @@
 
 	function ProfileController($location, $routeParams, Posts, Profile, Snackbar) {
 		var vm = this;
-		vm.profile = undefined;
+		//vm.profile = undefined;
+		vm.profile = Profile;
 		vm.posts = [];
 
 		activate();
